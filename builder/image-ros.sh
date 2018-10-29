@@ -139,8 +139,6 @@ echo_stamp "Installing CLEVER" \
 && git checkout ${REF} \
 && cd /home/pi/catkin_ws \
 && resolve_rosdep $(pwd) \
-&& my_travis_retry pip install wheel \
-&& my_travis_retry pip install -r /home/pi/catkin_ws/src/clever/clever/requirements.txt \
 && source /opt/ros/kinetic/setup.bash \
 && catkin_make -j${NUMBER_THREADS} -DCMAKE_BUILD_TYPE=Release \
 && systemctl enable roscore \

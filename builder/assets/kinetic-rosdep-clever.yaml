@@ -526,3 +526,23 @@ theora_image_transport:
 libogg:
   debian:
     stretch: [libtheora0=1.1.1+dfsg.1-14]
+flask:
+  debian:
+    stretch: |
+      pip install flask==0.12.3
+geopy:
+  debian:
+    stretch: |
+      pip install geopy==1.11.0
+pymavlink:
+  debian:
+    stretch: |
+      pip install pymavlink==2.2.10
+smbus2:
+  debian:
+    stretch: |
+      pip install smbus2==0.2.1
+vl53l1x:
+  debian:
+    stretch: |
+      pip install VL53L1X==0.0.2
